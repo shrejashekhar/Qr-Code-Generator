@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-ExtraLight.ttf')
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: bold;
+    src: url('fonts/Poppins-ExtraLight.ttf')
+}
+
+body {
+    background-color: #ffffff
+}
+
+.wrapper {
+    background-color: #FF0A54;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 0 30px;
+    min-height: 375px
+}
+
+.text-center {
+    text-align: center
+}
+
+input[type=text] {
+    margin-top: 10px;
+    width: 50%;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #F7CAD0;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out
+}
+
+input[type=text]:focus {
+    background-color: #ffffff;
+    width: 55%
+}
+
+h1 {
+    text-align: center;
+    color: #FF477E;
+    font-size: 10vh;
+    font-family: 'Poppins';
+}
+
+#qrcode {
+    margin: 20px
+}
+
+img {
+    border-radius: 5px
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 15vw
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    input[type=text] {
+        width: 70%
+    }
+    input[type=text]:focus {
+        background-color: #ffffff;
+        width: 75%
+    }
+}
